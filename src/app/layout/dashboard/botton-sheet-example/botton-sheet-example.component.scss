@@ -1,0 +1,28 @@
+::ng-deep .mat-bottom-sheet-container-large {
+    min-width: 900px;
+    max-width: calc(100vw - 256px);
+}
+
+::ng-deep .mat-bottom-sheet-container {
+    padding: 20px 20px 70px 20px;
+    // min-width: 100vw;
+    box-sizing: border-box;
+    // display: block;
+    outline: 0;
+    max-height: 80vh;
+    // overflow: auto;
+}
+// ::ng-deep .mat-form-field {
+//     width: 100%;
+// }
+.padre {
+    display: flex;
+    justify-content: space-between;
+}
+// .hijo1 {
+//     //   color: #ffffff;
+//     font-size: large;
+// }
+.btn-close {
+    padding-top: 0.6em;
+}

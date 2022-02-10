@@ -1,0 +1,22 @@
+$color-background: white;
+$color-background2: #f2f2f2;
+
+// SEIIS
+$color-red: #e7004c;
+$color-orange: #f7741c;
+$color-blue: #397ad8;
+$color-blue-strong: #16496b;
+$color-yellow: #efaf30;
+$color-blue-light: #00a7e1;
+$color-brown: #bf8b2e;
+$color-purple: #9578d3;
+$color-gray: #7b868c;
+$color-green: #6abfa6;
+
+* {
+    background: $color-background;
+}
+.main-container {
+    background: $color-background;
+    padding: 0;
+}

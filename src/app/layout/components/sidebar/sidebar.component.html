@@ -1,0 +1,83 @@
+<div id="sidebar">
+    <mat-selection-list #menu [multiple]="false" [(ngModel)]="selectedOptions">
+        <mat-divider class="navigation-divider"></mat-divider>
+        <mat-list-option
+            [routerLink]="['/indice']"
+            [value]="'transparente'"
+            (click)="toggleSidebar()"
+        >
+            <span class="icon-population">
+                <img
+                    class="icon-img"
+                    src="./assets/images/seiis/ico_poblacion.svg"
+                    alt=""
+                />
+
+                <span class="text-population">Población</span>
+            </span>
+        </mat-list-option>
+        <mat-divider class="navigation-divider"></mat-divider>
+        <mat-list-option [routerLink]="['/p01']" (click)="toggleSidebar()">
+            <span class="icon-education">
+                <img
+                    class="icon-img"
+                    src="./assets/images/seiis/ico_educacion.svg"
+                    alt=""
+                />
+                Educación
+            </span>
+        </mat-list-option>
+        <mat-divider class="navigation-divider"></mat-divider>
+        <mat-list-option [routerLink]="['/p02']" (click)="toggleSidebar()">
+            <span class="icon-health">
+                <img
+                    class="icon-img"
+                    src="./assets/images/seiis/ico_salud.svg"
+                    alt=""
+                />
+                Salud
+            </span>
+        </mat-list-option>
+        <mat-divider class="navigation-divider"></mat-divider>
+        <mat-list-option [routerLink]="['/p03']" (click)="toggleSidebar()">
+            <span class="icon-violence">
+                <img
+                    class="icon-img"
+                    src="./assets/images/seiis/ico_violencia.svg"
+                    alt=""
+                />
+                Violencia</span
+            >
+        </mat-list-option>
+        <mat-divider class="navigation-divider"></mat-divider>
+        <mat-list-option [routerLink]="['/p04']" (click)="toggleSidebar()">
+            <span class="icon-population-indigena">
+                <img
+                    class="icon-img"
+                    src="./assets/images/seiis/ico_poblacion_indigena.svg"
+                    alt=""
+                />
+                Población Indígena</span
+            >
+        </mat-list-option>
+        <mat-divider class="navigation-divider"></mat-divider>
+        <mat-list-option [routerLink]="['/p05']" (click)="toggleSidebar()">
+            <span class="icon-poverty">
+                <img
+                    class="icon-img"
+                    src="./assets/images/seiis/ico_pobreza.svg"
+                    alt=""
+                />
+                Pobreza</span
+            >
+        </mat-list-option>
+        <mat-divider class="navigation-divider"></mat-divider>
+    </mat-selection-list>
+    <mat-divider class="navigation-divider"></mat-divider>
+    <div class="version">
+        <p>Versión 1.0</p>
+        <button class="nota" mat-raised-button (click)="openDialog()">
+            Nota Metodológica
+        </button>
+    </div>
+</div>

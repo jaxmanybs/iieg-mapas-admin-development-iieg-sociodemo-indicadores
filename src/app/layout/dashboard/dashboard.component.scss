@@ -1,0 +1,700 @@
+$color-background: white;
+$color-background2: #f2f2f2;
+
+// SEIIS
+$color-red: #e7004c;
+$color-orange: #f7741c;
+$color-blue: #397ad8;
+$color-blue-strong: #16496b;
+$color-yellow: #efaf30;
+$color-blue-light: #00a7e1;
+$color-brown: #bf8b2e;
+$color-purple: #9578d3;
+$color-gray: #7b868c;
+$color-green: #6abfa6;
+
+// * {
+// background: $color-background;
+//   font-family: "archia";
+// }
+
+// .content2 {
+//     background-color: yellow;
+// }
+
+.chart-bar-canvas {
+    height: 30px;
+}
+
+.municipio-title {
+    // background-color: #9578d3;
+    text-align: center;
+    // padding-left: 30em;
+}
+.row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    align-items: center;
+
+    // background-color: red;
+}
+
+.cell {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+
+    padding-top: 0.4em;
+    // padding: 10px;
+    // margin: 10px;
+
+    // background-color: green;
+    // border: 1px solid red;
+    text-align: center;
+}
+img {
+    max-width: 80%;
+}
+
+// .logolgtb{
+//     height: 145px;
+//     padding-left: 0.4em;
+// }
+.main-content {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .content {
+        width: 47%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 2em;
+        // background: #54DBFF;
+        .content-center {
+            width: 100%;
+            border: none;
+            .controls {
+                background: transparent;
+                position: fixed;
+                padding: 5px 0 0 20px;
+                left: 300px;
+                z-index: 999;
+                -ms-overflow-y: auto;
+                overflow-y: auto;
+                margin: 0;
+                .btn_filter {
+                    color: $color-orange;
+                    background-color: $color-blue;
+                }
+            }
+            .logos {
+                // background-color: white;
+                // width: 100%;
+                margin: 0;
+                display: flex;
+                // flex-wrap: no-wrap;
+                // flex-direction: row;
+                justify-content: space-evenly;
+                .logo-1 {
+                    width: 18em;
+                    margin: 5px;
+                }
+                .logo-2 {
+                    width: 10em;
+                }
+            }
+            // information
+            .school {
+                // background: #e7d80d7a;
+                width: 100%;
+                padding: 5px 20px 10px 20px;
+                bottom: 0;
+                .hijo11 {
+                    width: 100%;
+                    padding-top: 1em;
+                    .pad {
+                        margin: 0;
+                        .txt {
+                            font-weight: bold;
+                            margin: 0;
+                        }
+                        li {
+                            padding-left: 1em;
+                        }
+                    }
+                }
+                .hijo12 {
+                    // padding-top: 2em;
+                    // text-align: center;
+                    .charts {
+                        // display: flex;
+                        // justify-content: center;
+
+                        .chartPie {
+                            width: 100%;
+                            .chart-indice {
+                                // width: 100%;
+                                // margin: 0;
+                                display: flex;
+                                flex-wrap: wrap;
+                                // background: #54dbff;
+                                .chart-bar {
+                                    width: 100%;
+                                    .chart-bar-canvas {
+                                        height: 100px;
+                                    }
+                                }
+
+                                // .indice {
+                                //     width: 10%;
+                                //     font-size: 16px;
+                                //     text-align: center;
+                                // }
+                            }
+                        }
+                    }
+                }
+            }
+            .denue {
+                // background: #e7d80d7a;
+                width: 100%;
+                padding: 0px 20px 20px 20px;
+                bottom: 0;
+                .municipio {
+                    font-weight: bold;
+                    font-size: 24px;
+                    margin: 15px;
+                }
+                .municipio-indice {
+                    margin: 15px;
+                }
+                .max-pos {
+                    font-size: 14px;
+                }
+                .hijo11 {
+                    width: 100%;
+                    padding-top: 1em;
+                    .pad {
+                        margin: 0;
+                        .txt {
+                            font-weight: bold;
+                            margin: 0;
+                        }
+                        li {
+                            padding-left: 1em;
+                        }
+                    }
+                }
+                .hijo12 {
+                    padding-top: 2em;
+                    text-align: center;
+                    .charts {
+                        display: flex;
+                        justify-content: center;
+
+                        .chartPie {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-content {
+            text-align: center;
+            // background: #525659;
+
+            width: 98%;
+            .footer {
+                background: #525659;
+                color: white;
+                font-weight: normal;
+                .footer-txt-1 {
+                    padding-top: 3em;
+                    font-size: 1em;
+                    background: #525659;
+                }
+                .footer-txt-2 {
+                    padding-top: 1em;
+                    font-size: 0.8em;
+                    background: #525659;
+                }
+                .footer-txt-3 {
+                    padding-top: 1em;
+                    font-size: 0.75em;
+                    background: #525659;
+                }
+                .footer-txt-4 {
+                    padding-top: 1em;
+                    font-size: 0.7em;
+                    background: #525659;
+                }
+                .footer-txt-5 {
+                    // padding-top: 2em;
+                    background: #525659;
+
+                    .logo-jaliscogob {
+                        background: #525659;
+                        height: 10em;
+                    }
+                }
+            }
+        }
+    }
+
+    // map
+    .map {
+        width: 43%;
+        border: none;
+        position: fixed;
+        right: 0;
+        top: 64px;
+        bottom: 0;
+        z-index: 998;
+        -ms-overflow-y: auto;
+        overflow-y: auto;
+    }
+}
+
+///////////////////////////////////////////////////////////
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fad496;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #95682b;
+}
+
+//   .mat-drawer-container{
+// background-color: white;
+
+// background-color: #25ee0b;
+//   }
+
+// .info-map {
+//     width: 38px;
+//     height: 38px;
+//     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAACE1BMVEX///8A//8AgICA//8AVVVAQID///8rVVVJtttgv98nTmJ2xNgkW1ttyNsmWWZmzNZYxM4gWGgeU2JmzNNr0N1Rwc0eU2VXxdEhV2JqytQeVmMhVmNoydUfVGUgVGQfVGQfVmVqy9hqy9dWw9AfVWRpydVry9YhVmMgVGNUw9BrytchVWRexdGw294gVWQgVmUhVWPd4N6HoaZsy9cfVmQgVGRrytZsy9cgVWQgVWMgVWRsy9YfVWNsy9YgVWVty9YgVWVry9UgVWRsy9Zsy9UfVWRsy9YgVWVty9YgVWRty9Vsy9aM09sgVWRTws/AzM0gVWRtzNYgVWRuy9Zsy9cgVWRGcHxty9bb5ORbxdEgVWRty9bn6OZTws9mydRfxtLX3Nva5eRix9NFcXxOd4JPeINQeIMiVmVUws9Vws9Vw9BXw9BYxNBaxNBbxNBcxdJexdElWWgmWmhjyNRlx9IqXGtoipNpytVqytVryNNrytZsjZUuX210k5t1y9R2zNR3y9V4lp57zth9zdaAnKOGoaeK0NiNpquV09mesrag1tuitbmj1tuj19uktrqr2d2svcCu2d2xwMO63N+7x8nA3uDC3uDFz9DK4eHL4eLN4eIyYnDX5OM5Z3Tb397e4uDf4uHf5uXi5ePi5+Xj5+Xk5+Xm5+Xm6OY6aHXQ19fT4+NfhI1Ww89gx9Nhx9Nsy9ZWw9Dpj2abAAAAWnRSTlMAAQICAwQEBgcIDQ0ODhQZGiAiIyYpKywvNTs+QklPUlNUWWJjaGt0dnd+hIWFh4mNjZCSm6CpsbW2t7nDzNDT1dje5efr7PHy9PT29/j4+Pn5+vr8/f39/f6DPtKwAAABTklEQVR4Xr3QVWPbMBSAUTVFZmZmhhSXMjNvkhwqMzMzMzPDeD+xASvObKePPa+ffHVl8PlsnE0+qPpBuQjVJjno6pZpSKXYl7/bZyFaQxhf98hHDKEppwdWIW1frFnrxSOWHFfWesSEWC6R/P4zOFrix3TzDFLlXRTR8c0fEEJ1/itpo7SVO9Jdr1DVxZ0USyjZsEY5vZfiiAC0UoTGOrm9PZLuRl8X+Dq1HQtoFbJZbv61i+Poblh/97TC7n0neCcK0ETNUrz1/xPHf+DNAW9Ac6t8O8WH3Vp98f5lCaYKAOFZMLyHL4Y0fe319idMNgMMp+zWVSybUed/+/h7I4wRAG1W6XDy4XmjR9HnzvDRZXUAYDFOhC1S/Hh+fIXxen+eO+AKqbs+wAo30zDTDvDxKoJN88sjUzDFAvBzEUGFsnADoIvAJzoh2BZ8sner+Ke/vwECuQAAAABJRU5ErkJggg==")
+//         /*logo.png*/;
+//     background-repeat: no-repeat;
+//     background-position: 2px;
+//     background-color: white;
+//     border: none;
+// }
+
+// .info-filter {
+//     cursor: help;
+//     margin: 0px;
+//     padding: 0px;
+//     font-size: 20px;
+// }
+
+// .animated-link {
+//     cursor: help;
+//     display: inline-block;
+//     position: relative;
+//     color: $color-blue;
+//     font-weight: bold;
+// }
+
+// .animated-link:after {
+//     background: none repeat scroll 0 0 transparent;
+//     bottom: 0;
+//     content: "";
+//     display: block;
+//     height: 2px;
+//     left: 80%;
+//     position: absolute;
+//     background: $color-rose;
+//     transition: width 0.3s ease 0s, left 0.3s ease 0s;
+//     width: 0;
+// }
+
+// .animated-link:hover:after {
+//     // color: $color-gray2;
+//     width: 100%;
+//     left: 0;
+// }
+
+// .tooltip-info {
+//     font-size: 11px;
+// }
+
+// .mat-tab-group.mat-primary .mat-ink-bar {
+//     background-color: #fbbb27;
+// }
+@media screen and (max-width: 1680px) {
+    .content {
+        width: 46%;
+        .footer-content {
+            // text-align: center;
+            // background: #525659;
+
+            // width: 98%;
+            .footer {
+                padding: 0 35px;
+                color: white;
+                font-weight: normal;
+                .footer-txt-1 {
+                    padding-top: 3em;
+                    font-size: 1em;
+                    // background: #525659;
+                }
+                .footer-txt-2 {
+                    padding-top: 1em;
+                    font-size: 0.8em;
+                    // background: #525659;
+                }
+                .footer-txt-3 {
+                    padding-top: 1em;
+                    font-size: 0.75em;
+                    // background: #525659;
+                }
+                .footer-txt-4 {
+                    padding-top: 1em;
+                    font-size: 0.7em;
+                    // background: #525659;
+                }
+                .footer-txt-5 {
+                    // padding-top: 2em;
+                    // background: #525659;
+
+                    .logo-jaliscogob {
+                        // background: #525659;
+                        height: 10em;
+                    }
+                }
+            }
+        }
+    }
+
+    .map {
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .content {
+        width: 46%;
+
+        .footer-content {
+            // text-align: center;
+            // background: #525659;
+
+            // width: 98%;
+            .footer {
+                // background: #525659;
+                // color: white;
+                // font-weight: normal;
+                .footer-txt-1 {
+                    padding-top: 3em;
+                    font-size: 0.9em;
+                    // background: #525659;
+                }
+                .footer-txt-2 {
+                    padding-top: 1em;
+                    font-size: 0.7em;
+                    // background: #525659;
+                }
+                .footer-txt-3 {
+                    padding-top: 1em;
+                    font-size: 0.65em;
+                    // background: #525659;
+                }
+                .footer-txt-4 {
+                    padding-top: 1em;
+                    font-size: 0.7em;
+                    // background: #525659;
+                }
+                .footer-txt-5 {
+                    // padding-top: 2em;
+                    // background: #525659;
+
+                    .logo-jaliscogob {
+                        // background: #525659;
+                        height: 10em;
+                    }
+                }
+            }
+        }
+    }
+
+    .map {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .main-content {
+        // width: 100%;
+        // margin: 0;
+        // display: flex;
+        // flex-direction: row;
+        .content {
+            width: 50%;
+            // border: none;
+        }
+        .map {
+            width: 38%;
+            // border: none;
+            // margin: 5px;
+            // height: 50vh;
+
+            // position: static;
+            // z-index: 100;
+            // -ms-overflow-y: auto;
+            // overflow-y: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .main-content {
+        // width: 100%;
+        // margin: 0;
+        // display: flex;
+        // flex-direction: row;
+        .content {
+            width: 50%;
+            // border: none;
+        }
+        .map {
+            width: 50%;
+            // border: none;
+            // margin: 5px;
+            // height: 50vh;
+
+            // position: static;
+            // z-index: 100;
+            // -ms-overflow-y: auto;
+            // overflow-y: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .main-content {
+        // width: 100%;
+        // margin: 0;
+        // display: flex;
+        // flex-direction: row;
+        .content {
+            // width: 50%;
+            .logo-1 {
+                height: 2rem;
+            }
+            .logo-2 {
+                height: 2rem;
+            }
+            .hijo12 {
+                .charts {
+                    width: 100%;
+                    .chart-bar-canvas {
+                        height: 5em;
+                    }
+                }
+            }
+        }
+        .map {
+            // width: 50%;
+            // border: none;
+            // margin: 5px;
+            // height: 50vh;
+
+            // position: relative;
+            // z-index: 100;
+            // -ms-overflow-y: auto;
+            // overflow-y: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    // .content-center {
+    //     width: 100%;
+    // }
+    // .charts {
+    //     width: 100%;
+    // }
+    // .hijo2 {
+    //     width: 100%;
+    //     border: none;
+    //     height: 50vh;
+    // }
+}
+
+@media screen and (max-width: 950px) {
+    // .content-center {
+    //     width: 100%;
+    // }
+    // .charts {
+    //     width: 100%;
+    // }
+    // .hijo2 {
+    //     width: 100%;
+    //     border: none;
+    //     height: 50vh;
+    // }
+    // .padre2 {
+    //     width: 100%;
+    // }
+    // .padre3 {
+    //     width: 100%;
+    // }
+}
+
+@media screen and (max-width: 800px) {
+    .main-content {
+        width: 100%;
+        // margin: 0;
+        // height: 100%;
+        display: flex;
+        flex-direction: row;
+        // flex-wrap: no-wrap;
+        .content {
+            width: 100%;
+            border: none;
+            margin-top: 80%;
+            height: 100%;
+
+            .content-center {
+                .denue {
+                    .municipio {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .map {
+            width: 100%;
+            border: none;
+            // margin: 5px;
+            height: 40%;
+
+            // position: static;
+            // right: 0;
+            // top: 0;
+            bottom: 80%;
+        }
+    }
+
+    // -----------
+    .hijo1 {
+        width: 100%;
+    }
+    .charts-pie {
+        width: 100%;
+    }
+    .hijo2 {
+        width: 100%;
+        border: none;
+        height: 50vh;
+    }
+    .padre2 {
+        width: 100%;
+    }
+    .padre3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 702px) {
+    .main-content {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        // display: flex;
+        // flex-wrap: wrap;
+        // .content {
+        //     width: 90%;
+        //     background: #dc9368;
+
+        // }
+        // .mapa {
+        //     width: 90%;
+        //     background: #c768dc;
+        // }
+
+        // .map {
+        //     width: 44%;
+        //     border: none;
+        //     position: fixed;
+        //     right: 0;
+        //     top: 64px;
+        //     bottom: 0;
+        //     z-index: 998;
+        //     -ms-overflow-y: auto;
+        //     overflow-y: auto;
+        // }
+    }
+}
+@media screen and (max-width: 450px) {
+    .main-content {
+        // width: 100%;
+        // margin: 0;
+        // display: flex;
+        // flex-direction: row;
+        .content {
+            // width: 50%;
+            .logo-lgtb {
+                height: 3em;
+            }
+
+            .questionSelected {
+                font-size: 14px;
+            }
+            // .hijo12 {
+            //     .charts {
+            //         width: 100%;
+            //         .chart-bar-canvas {
+            //             height: 5em;
+            //         }
+            //     }
+            // }
+        }
+        .map {
+            // width: 50%;
+            // border: none;
+            // margin: 5px;
+            // height: 50vh;
+
+            // position: relative;
+            // z-index: 100;
+            // -ms-overflow-y: auto;
+            // overflow-y: auto;
+        }
+    }
+}

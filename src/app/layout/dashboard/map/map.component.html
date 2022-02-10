@@ -1,0 +1,48 @@
+<div id="map" style="z-index: 2" class="map">
+    <mat-card>
+        <div id="overlay">
+            <div class="row">
+                <div style="z-index: 2">
+                    <div id="layertreee">
+                        <div class="acordion-mat" id="acordion-mat">
+                            <mat-accordion>
+                                <mat-expansion-panel hideToggle>
+                                    <mat-expansion-panel-header
+                                        style="background: #7b868c"
+                                    >
+                                        <mat-panel-title>
+                                            <strong
+                                                class="font-weight-bold"
+                                                style="color: #f2f2f2"
+                                                ><p class="capas">
+                                                    Simbología
+                                                </p></strong
+                                            >
+                                        </mat-panel-title>
+                                    </mat-expansion-panel-header>
+                                    {{ layer_case }}
+                                    <div>
+                                        <div class="col-12">
+                                            <strong
+                                                ><p class="covid-layer">
+                                                    {{ layer_now }}
+                                                </p></strong
+                                            >
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="img"
+                                        src="https://indices.jalisco.gob.mx/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=22&HEIGHT=12&LAYER=iieg:mpios2012_lgtb&legend_options=fontName:Times%20New%20Roman;fontAntiAliasing:true;fontColor:0x00A6D9;fontSize:12;bgColor:0xffffff;dpi:120"
+                                        alt=""
+                                    />
+                                    <!-- <img *ngIf="layer_now == 'Defunciones'" class="img" src="https://indices.jalisco.gob.mx/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=22&HEIGHT=12&LAYER=covid19:defuncionesxmpio&legend_options=fontName:Times%20New%20Roman;fontAntiAliasing:true;fontColor:0x00A6D9;fontSize:12;bgColor:0xffffff;dpi:120" alt="">
+                  <img *ngIf="layer_now == 'Tasa'" class="img" src="https://indices.jalisco.gob.mx/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=22&HEIGHT=12&LAYER=covid19:activosxmpiografjal_tasa&legend_options=fontName:Times%20New%20Roman;fontAntiAliasing:true;fontColor:0x00A6D9;fontSize:12;bgColor:0xffffff;dpi:120" alt=""> -->
+                                </mat-expansion-panel>
+                            </mat-accordion>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,172 @@
+$color-background: white;
+$color-background2: #f2f2f2;
+
+// SEIIS
+$color-red: #e7004c;
+$color-orange: #f7741c;
+$color-blue: #397ad8;
+$color-blue-strong: #16496b;
+$color-yellow: #efaf30;
+$color-blue-light: #00a7e1;
+$color-brown: #bf8b2e;
+$color-purple: #9578d3;
+$color-gray: #7b868c;
+$color-green: #6abfa6;
+
+:host {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+.nav-brand {
+    width: 215px;
+    text-align: center;
+}
+.topnav-icon {
+    text-decoration: none;
+    display: flex;
+    color: $color-blue;
+}
+.fix-nav {
+    height: 4rem;
+}
+.mat-icon {
+    color: $color-red;
+}
+.logo-principal {
+    margin-top: 0.2em;
+    // margin-left: 0.8rem;
+    height: 3em;
+}
+.logoiieg {
+    height: 7.5rem;
+}
+.logodependencia {
+    height: 3.4rem;
+    padding-right: 0.6em;
+}
+.logojaliscogob {
+    height: 2.9em;
+    padding-right: 0.4em;
+}
+
+.mat-toolbar.mat-primary {
+    background: $color-background2;
+}
+
+.nav-spacer {
+    flex: 1 1 auto;
+}
+
+.visible-md {
+    display: none;
+}
+.visible-sm {
+    display: none;
+}
+@media screen and (max-width: 1270px) {
+    .visible-md {
+        display: block;
+    }
+    .logoiieg {
+        height: 7rem;
+    }
+    .logodependencia {
+        height: 5.5rem;
+        padding-right: 0.6em;
+    }
+    .logojaliscogob {
+        height: 2.4em;
+        padding-right: 0.4em;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .visible-md {
+        display: block;
+    }
+    .logoiieg {
+        height: 6rem;
+    }
+    .logodependencia {
+        height: 4rem;
+    }
+    .logojaliscogob {
+        height: 2em;
+    }
+}
+@media screen and (max-width: 890px) {
+    .visible-sm {
+        display: block;
+    }
+    .nav-brand {
+        width: 100%;
+    }
+    .logoiieg {
+        height: 5rem;
+    }
+    .logodependencia {
+        height: 4rem;
+    }
+    .logojaliscogob {
+        height: 2em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo-principal {
+        height: 2.5em;
+    }
+    .logoiieg {
+        height: 4.5rem;
+    }
+    .logodependencia {
+        height: 3.5rem;
+    }
+    .logojaliscogob {
+        height: 1.8em;
+    }
+}
+@media screen and (max-width: 700px) {
+    .logo-principal {
+        height: 2em;
+    }
+    .logoiieg {
+        height: 4rem;
+    }
+    .logodependencia {
+        height: 3rem;
+    }
+    .logojaliscogob {
+        height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo-principal {
+        height: 1.5em;
+    }
+    .logoiieg {
+        height: 3rem;
+    }
+    .logodependencia {
+        height: 2rem;
+    }
+    .logojaliscogob {
+        height: 1em;
+    }
+}
+@media screen and (max-width: 360px) {
+    .logocovid19 {
+        margin-left: 0rem;
+        height: 1.9em;
+    }
+    .logoiieg {
+        height: 2rem;
+    }
+    .logojaliscogob {
+        height: 1.2em;
+    }
+}

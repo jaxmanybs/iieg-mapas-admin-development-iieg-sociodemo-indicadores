@@ -1,0 +1,23 @@
+<!-- <div class="chart2" style="display: block;">
+  <h3>Total: {{tot_edades}}</h3>
+    <canvas baseChart
+      [datasets]="barChartData"
+      [labels]="barChartLabels"
+      [options]="barChartOptions"
+      [colors]="barChartColors"
+      [plugins]="barChartPlugins"
+      [legend]="barChartLegend"
+      [chartType]="barChartType">
+    </canvas>
+  </div> -->
+<!-- <h1>chart works</h1> -->
+<div id="chart">
+    <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [dataLabels]="chartOptions.dataLabels"
+        [plotOptions]="chartOptions.plotOptions"
+        [title]="chartOptions.title"
+    >
+    </apx-chart>
+</div>

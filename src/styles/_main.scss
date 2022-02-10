@@ -1,0 +1,56 @@
+$color-background: white;
+$color-background2: #f2f2f2;
+
+// SEIIS
+$color-red: #e7004c;
+$color-orange: #f7741c;
+$color-blue: #397ad8;
+$color-blue-strong: #16496b;
+$color-yellow: #efaf30;
+$color-blue-light: #00a7e1;
+$color-brown: #bf8b2e;
+$color-purple: #9578d3;
+$color-gray: #7b868c;
+$color-green: #6abfa6;
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    // font-family: 'Fontil Sans';
+    // background: #f0f0f0;
+    background: $color-background2;
+}
+
+.main-container {
+    position: absolute;
+    top: 64px;
+    left: 260px;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+// html,
+// body {
+//     height: 100%;
+//     margin: 0;
+//     font-family: 'Fontil Sans';
+// }
+
+// .main-container {
+//     position: absolute;
+//     top: 64px;
+//     left: 250px;
+//     right: 0;
+//     bottom: 0;
+//     padding: 20px;
+// }
+
+// .mb-20 {
+//     margin-bottom: 20px;
+// }

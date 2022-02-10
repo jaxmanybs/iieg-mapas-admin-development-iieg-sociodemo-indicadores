@@ -1,0 +1,242 @@
+<!-- <div class="content2">
+    <div class="row">
+        <div class="cell">
+            <img src="http://i.imgur.com/OUla6mK.jpg" />
+        </div>
+        <div class="cell">
+            <img src="http://i.imgur.com/M16WzMd.jpg" />
+        </div>
+    </div>
+</div> -->
+<div class="main-content">
+    <div class="content">
+        <!-- <ngx-spinner bdColor="#000000" size="medium" color=" #00A6D9">
+        template="<img
+            src="https://media.giphy.com/media/o8igknyuKs6aY/giphy.gif"
+        /> -->
+        <!-- [fullScreen]="false" -->
+        <!-- type="square-spin" -->
+        <!-- type="ball-scale-multiple" -->
+        <!-- type="ball-clip-rotate-multiple" -->
+        <!-- <p style="font-size: 20px; color: #ce5690">Carcango...</p> -->
+        <!-- </ngx-spinner> -->
+        <div class="content-center">
+            <!-- <div class="controls"> -->
+            <!-- <h1>Jalisco</h1> -->
+            <!-- <div class="filter">
+                <div class="filter-content">
+                    <button  class="btn_filter" mat-raised-button (click)="openBottomSheet()">
+                        Filtrar
+                    </button>
+                </div>
+            </div> -->
+            <!-- </div> -->
+            <div class="logos">
+                <!-- <div class="cell"> -->
+                <!-- <img src="http://i.imgur.com/OUla6mK.jpg" /> -->
+                <!-- <img
+                    class="logo-1"
+                    src="./assets/images/lgtb/div-logo.svg"
+                    alt=""
+                /> -->
+                <!-- </div> -->
+                <!-- <div class="cell">
+                <img src="http://i.imgur.com/M16WzMd.jpg" />
+            </div> -->
+            </div>
+            <div class="denue" *ngIf="graficRadar2 == true">
+                <!-- <mat-divider class="navigation-divider"></mat-divider>
+                <div class="municipio-title">
+                    <div class="municipio">{{ municipio }}</div>
+                    <div *ngIf="avgFlag == true">
+                        <div class="municipio-indice">
+                            Índice de cumplimiento {{ indice }}
+                        </div>
+                        <span class="max-pos">Máximo posible 1.0</span>
+                    </div>
+                </div>
+                <div class="hijo11">
+                </div>
+                <div class="hijo12" *ngIf="avgFlag == false">
+                    <div class="charts">
+                        <div class="chartPie">
+                            <canvas
+                                baseChart
+                                [datasets]="radarChartDataMun"
+                                [options]="radarChartOptionsMun"
+                                [colors]="radarChartColors"
+                                [labels]="radarChartLabels"
+                                [chartType]="radarChartType"
+                            >
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+                <div class="school">
+                    <!-- <mat-divider class="navigation-divider"></mat-divider>
+                <div class="hijo11">
+                    <h3>
+                        <span class="questionSelected">{{
+                            questionSelected
+                        }}</span>
+                    </h3>
+                    <h1 *ngIf="avgFlag == true" class="municipio-title">
+                        Jalisco {{ avg }}
+                    </h1>
+                </div>
+                <div class="hijo12">
+                    <div class="charts">
+                        <canvas
+                            baseChart
+                            [datasets]="radarChartData"
+                            [options]="radarChartOptions"
+                            [colors]="radarChartColors"
+                            [labels]="radarChartLabels"
+                            [chartType]="radarChartType"
+                        >
+                        </canvas>
+                        <div class="chartPie" *ngIf="graficPie == true">
+                            <br />
+                            <div class="chart-indice">
+                                <div class="chart-bar">
+                                    <canvas
+                                        class="chart-bar-canvas"
+                                        height="{{ chartIndiceHeight }}"
+                                        baseChart
+                                        [datasets]="barChartData"
+                                        [labels]="barChartLabels"
+                                        [options]="barChartOptions"
+                                        [colors]="barChartColors"
+                                        [plugins]="barChartPlugins"
+                                        [legend]="barChartLegend"
+                                        [chartType]="barChartType"
+                                    >
+                                    </canvas>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                    <!-- indice AMG -->
+                    <br />
+                    <!-- <mat-divider class="navigation-divider"></mat-divider> -->
+                    <div class="hijo11">
+                        <!-- <div class="municipio-title">
+                        <div class="municipio"></div>
+                        <div>
+                            <div class="municipio-indice">
+                                Índice de cumplimiento---- {{ indice }}
+                            </div>
+                            <span class="max-pos">Máximo posible 1.0</span>
+                        </div>
+                    </div> -->
+                        <!-- <h3>
+                        <span class="questionSelected">{{
+                            questionSelected
+                        }}</span>
+                    </h3> -->
+                        <h1 class="municipio-title">AMG {{ avgAMG }}</h1>
+                    </div>
+                    <div class="hijo12">
+                        <div class="charts">
+                            <canvas
+                                baseChart
+                                [datasets]="radarChartDataAMG"
+                                [options]="radarChartOptionsAMG"
+                                [colors]="radarChartColorsAMG"
+                                [labels]="radarChartLabelsAMG"
+                                [chartType]="radarChartTypeAMG"
+                            >
+                            </canvas>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <!-- fin de indice AMG -->
+                </div>
+                <!-- <div class="denue" *ngIf="grafic == false"> -->
+
+                <!-- mat-drawer -->
+                <!-- <div class="mb-1">
+            <h2 class="animated-link" (click)="drawer.toggle()" >Nota importante</h2>
+        </div>
+
+        <mat-drawer-container class="dashboard-container" autosize>
+            <mat-drawer #drawer class="dashboard-sidenav" mode="side">
+                <p class="black-text-padding">
+                    Instrucciones para filtrar o la nota que estaba en rojo.
+                </p>
+            </mat-drawer>
+
+            <div class="filter" style="padding: 15px">
+                <button mat-raised-button (click)="openBottomSheet()">
+                    Filtrar
+                </button>
+                <h3>Municipio: {{ municipio }}</h3>
+            </div>
+            <div class="container">
+                <table>
+                    <thead>
+                        <th>Nombre</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let pais of listarPaises">
+                            <td>{{pais.properties.name}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </mat-drawer-container> -->
+
+                <!-- <app-chartbar2020></app-chartbar2020> -->
+                <!-- </mat-drawer-container> -->
+
+                <!-- <div class="map2">
+                <app-map
+                    [dataFilter]="dataFilterDash"
+                    (desde_el_hijo)="getDataMap($event)"
+                    (desde_el_hijo_map)="getDataMap2($event)"
+                >
+                </app-map>
+            </div> -->
+            </div>
+
+            <!-- <div class="footer-content">
+            <div class="footer">
+                <div class="footer-txt-1">
+                    Mapa de sitio | Aviso de Privacidad | Contabilidad
+                    Gubernamental | Licitaciones
+                </div>
+                <div class="footer-txt-2">
+                    INSTITUCTO DE INFORMACIÓN ESTADÍSTICA Y GEOGRÁFICA DE JALICO
+                </div>
+                <div class="footer-txt-3">
+                    Calzada de los Pirules 71 Col. Cd. Granja C.P. 45010 Tel.
+                    (33) 37771770
+                </div>
+                <div class="footer-txt-4">Zapopan, Jalisco, México</div>
+                <div class="footer-txt-5">
+                    <img
+                        class="logo-jaliscogob"
+                        src="./assets/images/jaliscogob.svg"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </div> -->
+            <!-- <div class="footer-space"></div> -->
+        </div>
+        <div class="map">
+            <app-map
+                [dataFilter]="dataFilterDash"
+                (desde_el_hijo)="getDataMap($event)"
+                (desde_el_hijo_map)="getDataMap2($event)"
+            >
+            </app-map>
+        </div>
+    </div>
+</div>
